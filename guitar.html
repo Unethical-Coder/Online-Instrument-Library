@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>RGB Guitar</title>
+    <link href="guitarStyle.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+    <!--
+    if (screen.width <= 769) {
+    document.location = "mobile.html";
+    }
+    //-->
+    </script>
+  </head>
+  <body id="body">
+
+    <h1>Acoustic RGB Guitar</h1>
+    <p>Click anywhere on screen to start playing</p>
+
+    <div id="gbody" class="gbody">
+
+      <div class="cut-top"></div>
+      <div class="cut-bottom"></div>
+
+      <div id="pickguard" class="pickguard"></div>
+
+      <div id="ring" class="circle">
+        <div id="hole" class="inner-circle"></div>
+      </div>
+
+      <div id="neck-body" class="neck-body">
+        
+      </div>
+      
+    </div>
+      <div id="neck" class="neck">
+        <div class="strings">
+          <button id="chord1" class="chord1" onmouseover="e1Sound()"></button>
+          <button id="chord2" class="chord2" onmouseover="bSound()"></button>
+          <button id="chord3" class="chord3" onmouseover="gSound()"></button>
+          <button id="chord4" class="chord4" onmouseover="dSound()"></button>
+          <button id="chord5" class="chord5" onmouseover="aSound()"></button>
+          <button id="chord6" class="chord6" onmouseover="eSound()"></button>
+        </div>
+      </div>
+
+      <div class="customize">
+        <h3>Customize</h3>
+        <div class="neck-picker">
+          <h4>Neck</h4>
+          R <input type="range" min="0" max="255" step="1" id="neck-red" value="0">
+          G <input type="range" min="0" max="255" step="1" id="neck-green" value="0">
+          B <input type="range" min="0" max="255" step="1" id="neck-blue" value="0">
+        </div>
+
+        <div class="body-picker">
+          <h4>Body</h4>
+          R <input type="range" min="0" max="255" step="1" id="body-red" value="210">
+          G <input type="range" min="0" max="255" step="1" id="body-green" value="180">
+          B <input type="range" min="0" max="255" step="1" id="body-blue" value="140">
+        </div>
+
+        <div class="pickguard-picker">
+          <h4>Pickguard</h4>
+          R <input type="range" min="0" max="255" step="1" id="pickguard-red" value="48">
+          G <input type="range" min="0" max="255" step="1" id="pickguard-green" value="9">
+          B <input type="range" min="0" max="255" step="1" id="pickguard-blue" value="10">
+        </div>
+
+        <div class="string-picker">
+          <h4>Strings</h4>
+          R <input type="range" min="0" max="255" step="1" id="string-red" value="169">
+          G <input type="range" min="0" max="255" step="1" id="string-green" value="169">
+          B <input type="range" min="0" max="255" step="1" id="string-blue" value="169">
+        </div>
+
+        <div class="ring-picker">
+          <h4>Ring</h4>
+          R <input type="range" min="0" max="255" step="1" id="ring-red" value="211">
+          G <input type="range" min="0" max="255" step="1" id="ring-green" value="211">
+          B <input type="range" min="0" max="255" step="1" id="ring-blue" value="211">
+        </div>
+
+        <div class="hole-picker">
+          <h4>Hole</h4>
+          R <input type="range" min="0" max="255" step="1" id="hole-red" value="39">
+          G <input type="range" min="0" max="255" step="1" id="hole-green" value="39">
+          B <input type="range" min="0" max="255" step="1" id="hole-blue" value="39">
+        </div>
+      </div>
+
+      <button class="reset" onclick="reset()">Reset</button>
+    <script src="scriptGuitar.js"></script>
+  </body>
+</html>

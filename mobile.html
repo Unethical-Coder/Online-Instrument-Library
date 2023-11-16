@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>repl.it</title>
+    <link href="guitarStyle.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  
+  <body id="m-body">
+
+    <div id="m-neck" class="m-neck">
+
+    </div>
+
+    <div id="m-gbody" class="m-gbody">
+      
+    </div>
+
+    <div id="m-ring" class="m-ring"></div>
+
+    <div id="m-neck-body" class="m-neck-body">
+      
+    </div>
+
+    <div id="m-hole" class="m-hole"></div>
+
+    <button id="m-string1" class="m-string1"></button>
+    <button id="m-string2" class="m-string2"></button>
+    <button id="m-string3" class="m-string3"></button>
+    <button id="m-string4" class="m-string4"></button>
+    <button id="m-string5" class="m-string5"></button>
+    <button id="m-string6" class="m-string6"></button>
+
+    <button id="sound"></button>
+    <button id="refresh"><a href="mobile.html"><i class="fas fa-sync-alt"></i></a></button>
+
+    <button id="custom"><i class="fas fa-pen" onclick="menu()"></i></button>
+
+    <div id="menu" class="menu">
+      <div class="m-neck-picker">
+        <h4>Neck</h4>
+        R <input type="range" min="0" max="255" step="1" id="m-neck-red" value="0"><br>
+        G <input type="range" min="0" max="255" step="1" id="m-neck-green" value="0"><br>
+        B <input type="range" min="0" max="255" step="1" id="m-neck-blue" value="0">
+      </div>
+
+      <div class="m-background-picker">
+        <h4>Background</h4>
+        R <input type="range" min="0" max="255" step="1" id="m-background-red" value="128"><br>
+        G <input type="range" min="0" max="255" step="1" id="m-background-green" value="128"><br>
+        B <input type="range" min="0" max="255" step="1" id="m-background-blue" value="128">
+      </div>
+
+      <div class="m-body-picker">
+        <h4>Body</h4>
+        R <input type="range" min="0" max="255" step="1" id="m-body-red" value="210"><br>
+        G <input type="range" min="0" max="255" step="1" id="m-body-green" value="180"><br>
+        B <input type="range" min="0" max="255" step="1" id="m-body-blue" value="140">
+      </div>
+
+      <div class="m-string-picker">
+        <h4>String</h4>
+        R <input type="range" min="0" max="255" step="1" id="m-string-red" value="169"><br>
+        G <input type="range" min="0" max="255" step="1" id="m-string-green" value="169"><br>
+        B <input type="range" min="0" max="255" step="1" id="m-string-blue" value="169">
+      </div>
+
+      <div class="m-ring-picker">
+        <h4>Ring</h4>
+        R <input type="range" min="0" max="255" step="1" id="m-ring-red" value="211"><br>
+        G <input type="range" min="0" max="255" step="1" id="m-ring-green" value="211"><br>
+        B <input type="range" min="0" max="255" step="1" id="m-ring-blue" value="211">
+      </div>
+
+      <div class="m-hole-picker">
+        <h4>Hole</h4>
+        R <input type="range" min="0" max="255" step="1" id="m-hole-red" value="39"><br>
+        G <input type="range" min="0" max="255" step="1" id="m-hole-green" value="39"><br>
+        B <input type="range" min="0" max="255" step="1" id="m-hole-blue" value="39">
+      </div>
+
+      <button class="m-reset" onclick="mReset()">Reset Colors</button>
+      <button class="close" onclick="closeMenu()">Close</button>
+    </div>
+
+
+  <script src="scriptGuitar.js"></script>
+  <script src="https://kit.fontawesome.com/34ff1faae9.js"></script>
+  </body>
+</html>
